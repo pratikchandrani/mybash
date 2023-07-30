@@ -612,6 +612,7 @@ export PATH=$PATH:"$HOME/.local/bin:$HOME/.cargo/bin"
 # Install Starship - curl -sS https://starship.rs/install.sh | sh
 
 eval "$(starship init bash)"
+export STARSHIP_CONFIG=~/.config/starship.toml
 
 #Autojump
 
