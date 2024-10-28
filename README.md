@@ -4,11 +4,19 @@ The `.bashrc` file is a script that runs every time a new terminal session is st
 
 ## How to install
 ```
+sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
+sudo apt update
+sudo apt install fastfetch
+sudo apt install bash-completion
 git clone --depth=1 https://github.com/pratikchandrani/mybash.git
 cd mybash
 chmod +x setup.sh
 ./setup.sh
 ```
+
+## For fastfetch on Raspberry Pi Debian 12 or older
+Download and install manually from https://github.com/fastfetch-cli/fastfetch/releases/download/2.17.2/fastfetch-linux-aarch64.deb
+sudo apt install ./fastfetch-linux-aarch64.deb
 
 ### Initial Setup and System Checks
 
