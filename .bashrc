@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 iatest=$(expr index "$-" i)
 
+# for non-interactive sessions stop execution here -- https://serverfault.com/a/805532/67528
+#this is essential for rsync. If following line is removed then "protocol incompatibility (code 2) at compat.c(622)" error occurs
+[[ $- != *i* ]] && return
+
 #######################################################
 # SOURCED ALIAS'S AND SCRIPTS BY zachbrowne.me
 #######################################################
